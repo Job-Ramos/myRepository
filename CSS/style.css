@@ -1,0 +1,86 @@
+
+
+
+.título {
+    font-weight: bold;
+    text-align: center;
+}
+
+.cartdLitle {
+    align-items: center;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.container {
+    border: 1px solid rgb(153, 146, 146);
+    width:400px;
+    height: 570px;
+    
+}
+
+img {
+    text-align: center;
+    align-items: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.subtítulo {
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.boton {
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 130px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5;
+               
+}
+
+.boton::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black 0%, #149826, rgb(213, 204, 18) 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.boton:hover::before {
+
+    width: 10em;
+}
+
+
+.boton::after {
+    content: "";
+    background: url('arrow_icon.png')no-repeat;
+    background-size: 100%;
+    width: 15px;
+    aspect-ratio: 1;
+    display: block;
+
+}
